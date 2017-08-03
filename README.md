@@ -1,4 +1,4 @@
-#Music Catalog Project
+# Music Catalog Project
 
 Learn IndexedDB and AJAX.
 
