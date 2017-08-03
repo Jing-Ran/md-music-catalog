@@ -1,0 +1,26 @@
+{
+  "name": "md-music-catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "busboy": "^0.2.14",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "jsonfile": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jing-Ran/md-music-catalog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jing-Ran/md-music-catalog/issues"
+  },
+  "homepage": "https://github.com/Jing-Ran/md-music-catalog#readme"
+}
