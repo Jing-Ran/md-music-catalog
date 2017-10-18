@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-var connect = require('gulp-connect');
+'use strict';
+let gulp = require('gulp');
+let connect = require('gulp-connect');
 
 gulp.task('default', function () {
   console.log('gulp has run!');
