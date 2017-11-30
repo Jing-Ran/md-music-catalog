@@ -1,7 +1,7 @@
 {
   "name": "md-music-catalog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learn IndexedDB and AJAX.",
   "main": "gulpfile.js",
   "dependencies": {
     "busboy": "^0.2.14",
