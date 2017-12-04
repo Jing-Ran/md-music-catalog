@@ -1,6 +1,14 @@
 'use strict';
 let gulp = require('gulp');
 let connect = require('gulp-connect');
+let minifyCss = require('gulp-clean-css');
+let uglifyJs = require('gulp-uglify-es').default;
+let rename = require('gulp-rename');
+
+function handleError(error) {
+  console.log(error.toString());
+  process.exit(1);
+}
 
 gulp.task('default', function () {
   console.log('gulp has run!');
@@ -76,4 +84,18 @@ gulp.task('connect', function () {
        ];
      }
    });
+});
+
+gulp.task('minify-css', function () {
+  return gulp.src('app/styles.css')
+    .pipe(minifyCss()).on('error', handleError)
+    .pipe(rename('styles.min.css'))
+    .pipe(gulp.dest('app'));
+});
+
+gulp.task('minify-js', function () {
+  return gulp.src('app/script.js')
+    .pipe(uglifyJs()).on('error', handleError)
+    .pipe(rename('script.min.js'))
+    .pipe(gulp.dest('app'));
 });
